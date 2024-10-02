@@ -54,4 +54,5 @@ async def on_message(message: cl.Message):
     cl.user_session.set("message_history", message_history)
 
 if __name__ == "__main__":
-    cl.main()
+    from chainlit.cli import run_chainlit
+    run_chainlit(__file__)
